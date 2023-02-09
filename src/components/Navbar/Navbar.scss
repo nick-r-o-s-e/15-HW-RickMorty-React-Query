@@ -1,0 +1,37 @@
+.navbar {
+  height: 6em;
+  display: flex;
+  padding: 0.7em 13em;
+  margin-bottom: 3em;
+  width: 100%;
+  justify-content: center;
+  background-color: #3e424b;
+  img {
+    height: 100%;
+  }
+  ul {
+    list-style-type: none;
+
+    display: flex;
+    gap: 3.5em;
+    align-items: center;
+    li {
+      a {
+        font-weight: 500;
+        font-size: 1.8em;
+        text-decoration: none;
+        color: #fff;
+        transition: all ease 0.2s;
+        &:hover {
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.864);
+        }
+        &.active {
+          color: rgba(0, 181, 213, 0.9);
+          &:hover {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
